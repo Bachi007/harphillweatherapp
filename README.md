@@ -31,7 +31,7 @@ bash
 Copy
 Edit
 # Clone the repository
-git clone https://github.com/your-username/weather-outfit-app.git
+git clone https://github.com/Bachi007/harphillweatherapp
 cd weather-outfit-app
 
 # Install dependencies
