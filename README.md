@@ -46,39 +46,7 @@ private apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
 You can get one from: https://openweathermap.org/api
 
  Run the App
-bash
-Copy
-Edit
+
 ng serve
 Then open http://localhost:4200 in your browser.
-
-🌈 UI Preview
-
-🔧 Folder Structure
-css
-Copy
-Edit
-src/
-├── app/
-│   ├── components/
-│   │   └── weather-dashboard/
-│   │       ├── weather-dashboard.component.ts
-│   │       ├── weather-dashboard.component.html
-│   │       └── weather-dashboard.component.css
-│   ├── services/
-│   │   └── weather.service.ts
-│   ├── app.component.ts
-│   ├── app.component.html
-│   └── app.component.css
-📌 To Do (Optional Enhancements)
-⛅ Add weather icons
-
-📍 Add geolocation support
-
-💾 Persist search history in localStorage
-
-⚡ Add thunder/lightning effects during storms
-
-📜 License
-This project is licensed under the MIT License.
 
