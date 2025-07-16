@@ -10,7 +10,9 @@ export class Weather {
   private baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
   constructor(private http: HttpClient) {}
-
+/**
+   * Fetches current weather data for a specified city from OpenWeatherMap API.
+  */
   getWeather(city: string): Observable<any> {
     return this.http.get(`${this.baseUrl}?q=${city}&appid=${this.apiKey}&units=metric`);
   }
