@@ -1,59 +1,47 @@
-# Weatherapp
+🌤️ Weather-Based Outfit Recommender
+A responsive Angular app that fetches weather data by city name and recommends appropriate outfits based on temperature and weather conditions. Includes a sleek UI built with Angular Material and Bootstrap and features a cool rain animation!
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+🧩 Features
+🔍 City Search – Enter any city name to fetch real-time weather
 
-## Development server
+🌡️ Weather Info – Displays temperature, weather condition, wind speed, and humidity
 
-To start a local development server, run:
+🧥 Outfit Suggestion – Smart clothing suggestions based on weather
 
-```bash
-ng serve
-```
+🕓 Search History – Shows the last 5 cities searched (in-memory)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🌧️ Rain Animation – Beautiful animated rain effect in the background
 
-## Code scaffolding
+💅 Modern UI – Built with Angular Material & Bootstrap for responsiveness
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🧱 Component Overview
+Component	Purpose
+AppComponent (app.component.ts)	Main container, renders layout and rain animation
+WeatherDashboardComponent (weather-dashboard.component.ts)	Handles city search, weather display, outfit logic, and history
+WeatherService (weather.service.ts)	Responsible for fetching weather data from OpenWeatherMap API
 
-```bash
-ng generate component component-name
-```
+🚀 Getting Started
+📦 Prerequisites
+Node.js and npm
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Angular CLI
 
-```bash
-ng generate --help
-```
+🛠️ Installation
+bash
+Copy
+Edit
+# Clone the repository
+git clone https://github.com/your-username/weather-outfit-app.git
+cd weather-outfit-app
 
-## Building
+# Install dependencies
+npm install
+⚙️ Configuration
+Open weather.service.ts and replace with your API key:
 
-To build the project run:
+ts
+Copy
+Edit
+private apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+You can get one from: https://openweathermap.org/api
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

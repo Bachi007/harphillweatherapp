@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class App {
   protected title = 'weatherapp';
+  drops = Array.from({ length: 50 }, (_, i) => i); 
+
 }
